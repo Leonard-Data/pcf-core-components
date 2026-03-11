@@ -1,17 +1,17 @@
 {
-  "Environment": "Syncfusion",
+  "Environment": "VN 3929 Würth Industry DEV",
   "solutionData": {
-    "solutionName": "SyncfusionPowerAppsComponents",
-    "publisherName": "Syncfusion",
-    "publisherPrefix": "Sf",
+    "solutionName": "WSComponentsKit",
+    "publisherName": "WS",
+    "publisherPrefix": "Ws",
     "solutionVersion": "28.1.33",
-    "includeComponents": ["Add your component folder name here to include"],
-    "excludeComponents": ["Add your component folder name here to exclude"],
+    "includeComponents": ["accordion","charts","filemanager","gantt","grids","kanban","pdfviewer","pivotview","richtexteditor","schedule","spreadsheet","treegrid"],
+    "excludeComponents": [],
     "publishManagedSolution": true
   },
   "componentData": {
-    "sampleLocation": "grids",
-    "componentName": "SfGrid",
-    "componentNameSpace": "Syncfusion"
+    "sampleLocation": "accordion",
+    "componentName": "WsAccordion",
+    "componentNameSpace": "WS"
   }
 }

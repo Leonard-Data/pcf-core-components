@@ -35,7 +35,7 @@ const { create_solution, solution_exists, adding_to_solution, folder_path_contai
  */
 gulp.task("create-solution", async (done) => {
   const taskDetails = { name: "create-solution" };
-  const exclusionPatterns = ["common", "Sf", "data", "out", "obj", "generated"];
+  const exclusionPatterns = ["common", "Ws", "data", "out", "obj", "generated"];
 
   try {
     await execShellCommand("pac", taskDetails, done, false, false);
