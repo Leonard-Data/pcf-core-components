@@ -1,10 +1,10 @@
 import * as React from "react";
 import { NoDataSource } from "./NoDataSource";
-import { SfGridComponent } from "./SfGrid";
+import { WsGridComponent } from "./WsGrid";
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
-import { ISfGrid } from "./types";
+import { IWsGrid } from "./types";
 
-export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs> {
+export class WsGrid implements ComponentFramework.ReactControl<IInputs, IOutputs> {
   private context: ComponentFramework.Context<IInputs>;
   private notifyOutputChanged: () => void;
   private isTestHarness: boolean;
@@ -61,7 +61,7 @@ export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs
       const allocatedWidth = parseInt(context.mode.allocatedWidth as unknown as string);
       const allocatedHeight = parseInt(context.mode.allocatedHeight as unknown as string);
 
-      const props: ISfGrid = {
+      const props: IWsGrid = {
         dataSource: dataSource,
         columns: columns,
         width: allocatedWidth > 0 ? allocatedWidth : "auto",
@@ -87,7 +87,7 @@ export class SfGrid implements ComponentFramework.ReactControl<IInputs, IOutputs
         handleEventAction: this.handleEventAction
       };
 
-      return React.createElement(SfGridComponent, props);
+      return React.createElement(WsGridComponent, props);
     } catch (error) {
       console.error(error);
       return React.createElement("div", null, "An error occurred while rendering the grid.");

@@ -12,17 +12,17 @@ import {
   PivotChart
 } from '@syncfusion/ej2-react-pivotview';
 import * as React from "react";
-import { ISfPivotView, IPivotViewConfig, Record } from './types';
+import { IWsPivotView, IPivotViewConfig, Record } from './types';
 import { ChartSettings } from "@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings";
 import { PivotZoomSettingsModel } from "@syncfusion/ej2-pivotview/src/pivotview/model/chartsettings-model";
 
 /**
- * Represents the SfPivotViewComponent component.
+ * Represents the WsPivotViewComponent component.
  *
- * @param {ISfPivotView} props - The props for the PivotView component.
+ * @param {IWsPivotView} props - The props for the PivotView component.
  * @returns {JSX.Element} - The rendered PivotView component.
  */
-export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: ISfPivotView) => {
+export const WsPivotViewComponent: React.FC<IWsPivotView> = React.memo((props: IWsPivotView) => {
   const pivotViewRef = React.useRef<PivotViewComponent>(null);
   const [pivotViewData, setPivotViewData] = React.useState<Record[]>([]);
   const [configJSON, setConfigJSON] = React.useState<IPivotViewConfig>();
@@ -178,7 +178,7 @@ export const SfPivotViewComponent: React.FC<ISfPivotView> = React.memo((props: I
   );
 });
 
-SfPivotViewComponent.displayName = "SfPivotViewComponent";
+WsPivotViewComponent.displayName = "WsPivotViewComponent";
 
 const defaultPivotViewConfig: IPivotViewConfig = {
   chartSettings: {} as ChartSettings,

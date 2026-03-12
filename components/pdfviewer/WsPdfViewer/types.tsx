@@ -3,7 +3,7 @@ import { InteractionMode } from '@syncfusion/ej2-pdfviewer';
 /**
  * Specifies PdfViewer property interface.
  */
-export interface ISfPdfViewer {
+export interface IWsPdfViewer {
   documentPath: string;
   enableToolbar: boolean;
   enableNavigationToolbar: boolean;

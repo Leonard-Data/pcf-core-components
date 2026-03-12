@@ -3,7 +3,7 @@ import { SelectionMode } from "@syncfusion/ej2-react-spreadsheet";
 /**
 * Specifies Spreadsheet property interface.  
 */
-export interface ISfSpreadsheet {
+export interface IWsSpreadsheet {
    dataSource: Record[];
    documentPath: string;
    width: string | number;

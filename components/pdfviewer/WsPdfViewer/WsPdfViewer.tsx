@@ -131,7 +131,7 @@ export const WsPdfViewerComponent: React.FC<IWsPdfViewer> = React.memo(
     return (
       <div style={{ width: width, height: height }}>
         <PdfViewerComponent style={{ width: width, height: height }}
-          ref={(ref) => { if (ref) pdfViewerRef = ref; }}
+          ref={(ref: PdfViewerComponent) => { if (ref) pdfViewerRef = ref; }}
           documentPath={documentPath}
           resourceUrl={"https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib"}
           documentLoad={updatePdfViewer}
