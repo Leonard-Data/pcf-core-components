@@ -12,7 +12,7 @@ import {
 /**
  * Represents the configuration options for the Syncfusion Schedule component.
  */
-export interface ISfSchedule {
+export interface IWsSchedule {
   dataSource: Record[] | undefined;
   width: string;
   height: string;
